@@ -1,0 +1,26 @@
+ErrorDocument 404   /index.php
+
+Options +FollowSymlinks
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^autocar-pas-cher.com 
+RewriteRule (.*)   http://www.autocar-pas-cher.com/$1  [R=301,L]
+
+### HOME ###
+RewriteRule   ^index.php                            http://www.autocar-pas-cher.com [L,R=301]
+RewriteRule ^www.autocar-pas-cher.com/?p=1$ http://www.autocar-pas-cher.com [L,R=301]
+RewriteRule ^www.autocar-pas-cher.com/?p=93$ http://www.autocar-pas-cher.com [L,R=301]
+RewriteRule ^www.autocar-pas-cher.com/?p=82$ http://www.autocar-pas-cher.com [L,R=301]
+RewriteRule ^www.autocar-pas-cher.com/?p=50$ http://www.autocar-pas-cher.com [L,R=301]
+RewriteRule ^www.autocar-pas-cher.com/?p=101$ http://www.autocar-pas-cher.com [L,R=301]
+RewriteRule ^www.autocar-pas-cher.com/?p=109$ http://www.autocar-pas-cher.com [L,R=301]
+RewriteRule ^www.autocar-pas-cher.com/?p=48$ http://www.autocar-pas-cher.com [L,R=301]
+
+
+### ANNUAIRE ###
+RewriteRule   ^annuaire-autocaristes/autocar-(.*)-d.html$  	annuaire_resultats.php?LOCALITE=$1&TYPE_LOCALITE=d  [L]
+RewriteRule   ^annuaire-autocaristes/autocar-(.*)-v.html$  	annuaire_resultats.php?LOCALITE=$1&TYPE_LOCALITE=v  [L]
+RewriteRule   ^annuaire-autocaristes/autocar-(.*)-r.html$  	annuaire_resultats.php?LOCALITE=$1&TYPE_LOCALITE=r  [L]
+RewriteRule   ^annuaire-autocaristes/autocar-(.*)-(.*)-p([0-9]+)-t([0-9]+).html$  annuaire_resultats.php?LOCALITE=$1&TYPE_LOCALITE=$2&p=$3&f=$4  [L]
+RewriteRule   ^annuaire-autocaristes/autocar-(.*)-dp([0-9]+)-t([0-9]+).html$  annuaire_resultats.php?LOCALITE=$1&TYPE_LOCALITE=d&p=$2&f=$3  [L]
+RewriteRule   ^annuaire-autocaristes/autocar-(.*)-vp([0-9]+)-t([0-9]+).html$  annuaire_resultats.php?LOCALITE=$1&TYPE_LOCALITE=v&p=$2&f=$3  [L]
+RewriteRule   ^annuaire-autocaristes/autocar-(.*)/(.*)-([0-9]+).html$  annuaire_detail.php?LOCALITE=$1&MDR_ID=$3  [L]

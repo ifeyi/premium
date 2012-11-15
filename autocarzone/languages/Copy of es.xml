@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language name="en">
+	<page name="login">
+		<phase name="login_input">Login</phase>
+		<phase name="username_default_input">Usuario</phase>
+		<phase name="login_button">Login</phase>
+		<phase name="reset_button">Reset</phase>
+		<phase name="login_request_msg">Introduzca sus credenciales para acceder.</phase>
+		<phase name="login_error">Credenciales erroneas!!!</phase>
+		<phase name="login_success">Acceso correcto! Será redirigido inmediatamente.</phase>
+	</page>
+	<page name="dashboard">
+		<phase name="menu_config">Configuración y seguridad</phase>
+		<phase name="menu_config_master">Datos maestros</phase>
+		<phase name="menu_config_master_basic">Tipos básicos y Categorías</phase>
+		<phase name="menu_config_mi">Inventario Maestro</phase>
+		<phase name="menu_config_mi_crops">Cultivos</phase>
+		<phase name="menu_config_mi_animals">Animales</phase>
+		<phase name="menu_config_mi_machines">Maquinaria</phase>
+		<phase name="menu_config_mi_works">Labores</phase>
+		<phase name="menu_config_mi_installations">Instalaciones</phase>
+		<phase name="menu_config_mi_vehicles">Vehículos</phase>
+		<phase name="menu_config_mi_wastes">Residuos</phase>
+		<phase name="menu_config_mi_wastes_t">Tratamientos</phase>
+		<phase name="menu_config_mi_materials">Materiales</phase>
+		<phase name="menu_config_mi_aux_serv">Servicios Auxiliares</phase>
+		<phase name="menu_config_mi_consumables">Consumibles</phase>
+		<phase name="menu_config_mi_energy">Energías</phase>
+		<phase name="menu_config_mi_products">Productos</phase>
+		<phase name="menu_config_mi_contaminats">Contaminantes</phase>
+		<phase name="menu_config_master_end">Transformación de productos finales</phase>
+		<phase name="menu_config_master_tp">Procesos de transformación</phase>
+		<phase name="menu_config_master_pm">Provincias y Municipios</phase>
+		<phase name="menu_config_security">Seguridad</phase>
+		<phase name="menu_config_s_menus">Menus</phase>
+		<phase name="menu_config_s_groups">Grupos</phase>
+		<phase name="menu_config_s_users">Usuarios</phase>
+		<phase name="menu_config_s_tracking">Rastreo</phase>
+	</page>
+</language>

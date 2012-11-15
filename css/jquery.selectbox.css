@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+/* JQUERY FORM HORIZONTAL */
+.jquery-selectbox {
+	position: absolute;
+	height:33px;
+	padding: 0px;
+	font-size: 14px;
+    font-weight: bold;
+	color: #242424;
+	background: url(../images/champ-deroulant2.png) no-repeat;
+}
+.jquery-selectbox .jquery-selectbox-currentItem {
+	padding: 5px 0px 0px 10px; 
+	position: absolute;
+	cursor: pointer;
+}
+.jquery-selectbox .jquery-selectbox-list {
+	display: none;
+	position: absolute;
+    z-index: 2;
+	top: 33px;
+	left: 0px;
+	background: #fff;
+	height:30px;
+	text-indent:12px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-left: 1px solid #ababab;
+	border-bottom: 1px solid #ababab;
+	border-right: 1px solid #ababab;
+}
+.jquery-selectbox .jquery-selectbox-moreButton {
+	width: 275px;
+	height: 33px;
+	cursor: pointer;
+	position: absolute;
+}
+.jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover {
+	position: absolute;
+}
+.jquery-selectbox .jquery-selectbox-item.listelementhover {
+	background: #1b64a9;
+	color: white;
+    overflow-x: hidden;
+	overflow-y: auto;
+}
+.jquery-selectbox .jquery-selectbox-item {
+	display: block;
+	cursor: default;
+    overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+/* JQUERY FORM VERTICAL */
+.jquery-selectbox2 {
+	position: absolute;
+	height:33px;
+	padding: 0px;
+	font-size: 14px;
+    font-weight: bold;
+	color: #242424;
+	background: url(../images/form-vertical-champ-deroulant.jpg) no-repeat;
+}
+.jquery-selectbox2 .jquery-selectbox2-currentItem {
+	padding: 5px 0px 0px 10px; 
+	position: absolute;
+	cursor: pointer;
+}
+.jquery-selectbox2 .jquery-selectbox2-list {
+	display: none;
+	position: absolute;
+    z-index: 2;
+	top: 33px;
+	left: 0px;
+	background: #fff;
+	height:30px;
+	text-indent:12px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-left: 1px solid #ababab;
+	border-bottom: 1px solid #ababab;
+	border-right: 1px solid #ababab;
+}
+.jquery-selectbox2 .jquery-selectbox2-moreButton {
+	width: 244px;
+	height: 33px;
+	cursor: pointer;
+	position: absolute;
+}
+.jquery-selectbox2 .jquery-selectbox2-moreButton.morebuttonhover {
+	position: absolute;
+}
+.jquery-selectbox2 .jquery-selectbox2-item.listelementhover {
+	background: #1b64a9;
+	color: white;
+}
+.jquery-selectbox2 .jquery-selectbox2-item {
+	display: block;
+	cursor: default;
+}
+
+.jquery-selectbox{padding-top: /*\**/ 4px \9}
+.jquery-selectbox2{padding-top: /*\**/ 4px \9}

@@ -1,0 +1,47 @@
+function changeOnglet(){
+
+    $(".onglet1").click(function(){
+        $(".onglet1").addClass("actif");
+        $(".onglet2").removeClass("actif");
+        $(".onglet3").removeClass("actif");
+        $(".onglet4").removeClass("actif");
+        $(".tab1").slideDown();
+        $(".tab2").slideUp();	    
+        $(".tab3").slideUp();	    
+        $(".tab4").slideUp();	    
+	});    
+    $(".onglet2").click(function(){
+        $(".onglet2").addClass("actif");
+        $(".onglet1").removeClass("actif");
+        $(".onglet3").removeClass("actif");
+        $(".onglet4").removeClass("actif");
+        $(".tab2").slideDown();
+        $(".tab1").slideUp();	    
+        $(".tab3").slideUp();	    
+        $(".tab4").slideUp();	    
+	});    
+    $(".onglet3").click(function(){
+        $(".onglet3").addClass("actif");
+        $(".onglet2").removeClass("actif");
+        $(".onglet1").removeClass("actif");
+        $(".onglet4").removeClass("actif");
+        $(".tab3").slideDown();
+        $(".tab2").slideUp();	    
+        $(".tab1").slideUp();	    
+        $(".tab4").slideUp();	    
+	});    
+    $(".onglet4").click(function(){
+        $(".onglet4").addClass("actif");
+        $(".onglet2").removeClass("actif");
+        $(".onglet3").removeClass("actif");
+        $(".onglet1").removeClass("actif");
+        $(".tab4").slideDown();
+        $(".tab2").slideUp();	    
+        $(".tab3").slideUp();	    
+        $(".tab1").slideUp();	    
+	});    
+}
+
+$(document).ready(function(){
+    changeOnglet()
+});	

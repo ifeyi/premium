@@ -1,0 +1,15 @@
+.ongles{
+    top: 29px;
+    right: 0;
+	position: absolute;
+}
+.circle{
+	top: -30px;
+}
+
+.guide{
+    margin-right: 10px;
+}
+#header-container .hgroup h5{
+	top: 0;
+}

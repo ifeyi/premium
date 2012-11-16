@@ -1,10 +1,22 @@
 <?php 
-$page = 'home';
+$page = 'edit-autocar';
+require_once 'config.php';
+GLOBAL $app;
+$C = new CamerticConfig;
+$app = new premiumAutocar;
+
 $texte_input_recherche = 'Entrez une localit&eacute;';
 include_once "inc/recherche.ann.php";
 include_once "inc/localites.ann.php";
 include_once "inc/resultats.ann.php"; 
 include_once "inc/haut.inc.php";
+if(!$app->checkSession()) {
+	header('location:login.php');
+	die();
+}
+$autocar = new mdr;
+$autocariste = $autocar->getRecord($_SESSION['fiche_id']);
+//var_dump($autocariste);
 ?>
 		
 		<div id="main-container" class="clearfix">
@@ -169,19 +181,30 @@ include_once "inc/haut.inc.php";
 						<div class="tab5">
 							<p>
 						       <form method="POST" action="">
-									<label for="mdr_nom">Nom de votre soci&eacute;t&eacute;</label><input name="mdr_nom" id="mdr_nom" type="text"/>
+								<div class="field-form">
+									<label for="mdr_nom">Nom de votre soci&eacute;t&eacute;</label><input name="mdr_nom" id="mdr_nom" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
+								</div>
+									<label for="mdr_resp">Nom du responsable</label><input name="mdr_resp" id="mdr_resp" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
 									<br />
-									<label for="mdr_resp">Nom du responsable</label><input name="mdr_resp" id="mdr_resp" type="text"/>
+									<label for="mdr_siret">N° de SIRET : </label><input name="mdr_siret" id="mdr_siret" type="text"value="<?php echo $autocariste->mdr_nom ?>" />
 									<br />
-									<label for="mdr_tel">Num&eacute;ro de t&eacute;l&eacute;phone</label><input name="mdr_tel" id="mdr_tel" type="text"/>
+									<label for="mdr_lic">N° licence du transporteur : </label><input name="mdr_lic" id="mdr_lic" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
 									<br />
-									<label for="mdr_email">Adresse Email</label><input name="mdr_email" id="mdr_email" type="text"/>
+									<label for="mdr_adresse">Adresse de la societ&eacute; : </label><input name="mdr_adresse" id="mdr_adresse" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
 									<br />
-									<label for="mdr_ville">Ville</label><input name="mdr_ville" id="mdr_ville" type="text"/>
+									<label for="mdr_tel">Num&eacute;ro de t&eacute;l&eacute;phone</label><input name="mdr_tel" id="mdr_tel" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
 									<br />
-									<label for="mdr_adresse">Adresse</label><input name="mdr_adresse" id="mdr_adresse" type="text"/>
+									<label for="mdr_cp">Code postal : </label><input name="mdr_cp" id="mdr_cp" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
 									<br />
-									<label for="mdr_fax">Ville</label><input name="mdr_fax" id="mdr_fax" type="text"/>
+									<label for="mdr_email">Adresse Email</label><input name="mdr_email" id="mdr_email" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
+									<br />
+									<label for="mdr_ville">Ville</label><input name="mdr_ville" id="mdr_ville" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
+									<br />
+									<label for="mdr_adresse">Adresse</label><input name="mdr_adresse" id="mdr_adresse" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
+									<br />
+									<label for="mdr_fax">Fax</label><input name="mdr_fax" id="mdr_fax" type="text" value="<?php echo $autocariste->mdr_nom ?>" />
+									<br />
+									<label for="mdr_siteweb">Site Internet</label><input name="mdr_siteweb" id="mdr_siteweb" type="text" value="<?php echo $autocariste->mdr_nom ?>"/>
 									
 									<input name="valid" id="valid" value="-2" type="hidden"/>
 									<br />

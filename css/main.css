@@ -740,7 +740,27 @@ a.actuel, .numeros a:hover {
 	margin: auto;
 	padding: 10px;
 }
-#corps input{
+.tabs form{
+    width: 550px;
+	margin: auto;
+	padding: 10px;
+}
+.tabs form label{
+      float: left;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: right;
+    width: 200px;
+	margin-right : 10px;
+}
+.tabs form input{
+    float: left;
+    width: 200px
+}
+.tabs .field-form{
+    height: 40px;
+}
+#corps input,.tabs form input{
     width: 300px;
     box-shadow: inset 1px 1px 2px 1px rgba(0,0,0,.2);
     -moz-box-shadow: inset 1px 1px 2px 1px rgba(0,0,0,.2);

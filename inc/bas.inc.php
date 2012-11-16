@@ -25,7 +25,7 @@
         <script type="text/javascript">window.jQuery || document.write('<script src="<?php echo PATH_ROOT ?>js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
         <script type="text/javascript" src="<?php echo PATH_ROOT ?>js/plugins.js"></script>
         <script type="text/javascript" src="<?php echo PATH_ROOT ?>js/main.js"></script>
-		<script src="js/script.js"></script>
+		<script src="<?php echo PATH_ROOT ?>js/script.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script type="text/javascript">
 

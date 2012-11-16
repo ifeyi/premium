@@ -510,11 +510,13 @@ h1, h2, h3{
 	background: #21a7C5;
 }
 
-.tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .tab7, .tab8{
+.tab1, .tab2, .tab3, .tab4, .tab5{
     background: #fff;
-	padding: 0 15px 0 15px;
+	padding: 0 15px 15px 15px;
 	border: 1px solid #32B7C5;
 	display: none;
+	overflow: hidden;
+	min-height: 200px;
 }
 .tab1{
 	display: block;
@@ -527,7 +529,7 @@ h1, h2, h3{
 	padding: 0;
 	top: 0;
 }
-.onglet1,.onglet2,.onglet3,.onglet4,.onglet5,.onglet6,.onglet7,.onglet8{
+.onglet1,.onglet2,.onglet3,.onglet4, .onglet5{
     color: #ffffff;
 	font-weight: bold;
 	padding: 10px;
@@ -731,36 +733,16 @@ a.actuel, .numeros a:hover {
 	padding-bottom: 20px;
 	margin-bottom: 10px;
 }
-#corps p{
+#corps p, .tabs p{
     padding: 10px;
 	font-size: 13px;
 }
-#corps form{
+#corps form, .tabs form{
     width: 350px;
 	margin: auto;
 	padding: 10px;
 }
-.tabs form{
-    width: 550px;
-	margin: auto;
-	padding: 10px;
-}
-.tabs form label{
-      float: left;
-    font-weight: bold;
-    line-height: 40px;
-    text-align: right;
-    width: 200px;
-	margin-right : 10px;
-}
-.tabs form input{
-    float: left;
-    width: 200px
-}
-.tabs .field-form{
-    height: 40px;
-}
-#corps input,.tabs form input{
+#corps input, .tabs form input{
     width: 300px;
     box-shadow: inset 1px 1px 2px 1px rgba(0,0,0,.2);
     -moz-box-shadow: inset 1px 1px 2px 1px rgba(0,0,0,.2);
@@ -773,11 +755,11 @@ a.actuel, .numeros a:hover {
 	margin: 5px 0 20px 0;
 	border: 1px solid #999999;
 }
-#corps label{
+#corps label, .tabs form label{
     font-weight: bold;
 	color: #333;
 }
-#corps button{
+#corps button, .tabs form button{
     font-weight: bold;
 	color: #fff;
 	background: #32B7C5;
@@ -790,7 +772,7 @@ a.actuel, .numeros a:hover {
 	float: right;
 	margin: 5px 40px 0 0;
 }
-#corps button:hover{
+#corps button:hover, .tabs form button:hover{
 	background: #21a6b4;
 }
 

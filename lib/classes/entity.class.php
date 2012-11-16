@@ -111,7 +111,7 @@ abstract class entity extends bd {
 	}
 	
 	public function getRecord($id){
-		$req = "SELECT * FROM $this->table WHERE $this->id = '$id' LIMIT 1";
+		$req = "SELECT * FROM $this->table WHERE $this->primaryKey = '$id' LIMIT 1";
 		$res = $this->select($req);
 		return $res[0];
 	}
